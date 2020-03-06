@@ -1,0 +1,46 @@
+{
+  "name": "MiroNuxtCms",
+  "version": "1.0.0",
+  "description": "My Nuxt CMS",
+  "author": "Muhammadamin Nematov",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --hostname nuxtcms --port 9000",
+    "build": "nuxt build --universal",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest",
+    "deploy": "pm2 start npm --name MiroNuxtCms -- start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "@nuxtjs/auth": "^4.8.5",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
+    "admin-lte": "^3.0.0-alpha.2",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.4.2",
+    "cookieparser": "^0.1.0",
+    "global": "^4.4.0",
+    "in": "^0.17.0",
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.0",
+    "nuxt": "^2.0.0",
+    "pm2": "^4.2.3",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "9000"
+    }
+  }
+}
