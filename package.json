@@ -1,16 +1,15 @@
 {
-  "name": "MiroNuxtCms",
+  "name": "nuxtcms",
   "version": "1.0.0",
   "description": "My Nuxt CMS",
   "author": "Muhammadamin Nematov",
   "private": true,
   "scripts": {
-    "dev": "nuxt --hostname nuxtcms --port 9000",
-    "build": "nuxt build --universal",
+    "dev": "nuxt",
+    "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "test": "jest",
-    "deploy": "pm2 start npm --name MiroNuxtCms -- start"
+    "test": "jest"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
@@ -21,26 +20,17 @@
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.4.2",
-    "cookieparser": "^0.1.0",
-    "global": "^4.4.0",
-    "in": "^0.17.0",
     "jquery": "^3.4.1",
-    "js-cookie": "^2.2.0",
     "nuxt": "^2.0.0",
-    "pm2": "^4.2.3",
     "popper.js": "^1.16.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "cookieparser": "^0.1.0",
+    "js-cookie": "^2.2.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
     "vue-jest": "^4.0.0-0"
-  },
-  "config": {
-    "nuxt": {
-      "host": "0.0.0.0",
-      "port": "9000"
-    }
   }
 }
